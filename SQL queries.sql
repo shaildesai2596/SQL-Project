@@ -26,9 +26,6 @@ select top 5 sum(sales) as Max_Sales_On_Single_Day, customername, cast(ORDERDATE
 group by ORDERDATE
 order by sum(sales) desc;
 
---(HAVING ISSUE WITH MONTH, NOT GETTING 11 AS THE MONTH AND GETTING 00 AT ITS PLACE)
---(HOW TO ADD CUSTOMER NAMES IN ONE ROW ALL TOGETHER FOR ABOVE QUERY)
-
 --product line with least sales
 
 select sum(sales) as Least_Sales, PRODUCTLINE from sales_data_sample
